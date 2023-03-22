@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import calendar 
 import datetime
+from PIL import Image
 
 def main():
     """코드작성"""
@@ -109,17 +110,57 @@ def main():
     st.write(age)
 
     # 범위를 양 끝으로 움직일 수 있음
-    '''
-    color  = st.select_slider('색상 선택:',
-                                options = ['노란색', '빨간색', '파란색', '검정색', '흰색'],
-                                value = ("노란색", "흰색"))
-    st.write(color)
-    '''
+  
+    # color  = st.select_slider('색상 선택:',
+    #                             options = ['노란색', '빨간색', '파란색', '검정색', '흰색'],
+    #                             value = ("노란색", "흰색"))
+    # st.write(color)
+  
     start_color, end_color  = st.select_slider('색상 선택:',
                                 options = ['노란색', '빨간색', '파란색', '검정색', '흰색'],
                                 value = ("노란색", "흰색"))
     st.write(start_color, end_color)
 
+## 멀티 미디어 파일
+    img = Image.open('data/image_03.jpg')
+    st.image(img)
+
+    img_url = 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAzMjRfMTE0%2FMDAxNjQ4MTE5MDQ2NTUy.aGK-kSYKJJB0ahEVfQdH4VYx06Gu6Eg6paHF4AZnY5Mg.lIOUHDKnk2fTm5fw8HV_u_olmOWfw_bDeQwk2L2cp5Mg.JPEG.olivia_1005%2F6F9D362B-4B6D-4186-A8CF-B3B1D51703C0.jpg&type=sc960_832'
+    st.image(img_url)
+
+    # 비디오 출력
+    # 컨텍스트 매니저 :  with 블록 안에서 리소스를 안전하게 열고 사용한 뒤,
+    #                  블록을 벗어나면 자동으로 리소스를 닫아줍니다. 
+    #                  이는 코드의 간결성과 에러 처리를 보다 효율적으로 할 수 있도록 도와줌
+    with open('data/secret_of_success.mp4', 'rb') as rb:
+        video_file = rb.read()
+        st.video(video_file, start_time = 1)
+    # rb :바이너리 모드(Binary mode)는 파일을 byte 단위로 처리하는 모드
+
+    # 오디오 출력
+    with open('data/song.mp3', 'rb') as rb:
+        audio_file = rb.read()
+        st.audio(audio_file, format="audio/mp3", start_time = 60)
+
+    # 유튜브 비디오 출력
+    st.video('https://youtu.be/90QOWMQm0S0')
+
+    # text
+    fname = st.text_input('입력해주세요')
+    st.title(fname)
+
+    message = st.text_area('입력해주세요', height=300, value='Hello, world!')
+    st.write(message)
+
+    nums = st.number_input('숫자 입력')
+    st.write(nums)
+
+    mytime = st.time_input('시간')
+    st.write(mytime)
+
+    # color Picker
+    color = st.color_picker('색상 선택')
+    st.write(color)
 
 if __name__ == "__main__":
     main()
