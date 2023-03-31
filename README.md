@@ -19,7 +19,7 @@
   - 사용툴 : Visual Studio Code
   - HTML, CSS, JAVASCRIPT, jQUERY
   - 홈페이지 제작
-  - 참고 서적 : Do it ! 웹 사이트 따라 만들기
+  - 참고 서적 : Do it ! 웹 사이트 따라 만들기(김윤미)
 - SQL
   - 2023.02.27 ~ 2023.03.10
   - 사용툴 : Oracle SQL Developer
@@ -30,10 +30,14 @@
   - 엔터티 및 속성
   - 정규화, 반정규화, 통합, 관계
   - 개념, 논리, 물리 모델링
-  - 참고 서적 : 오라클 SQL과 PL/SQL을 다루는 기술
+  - 참고 서적 : 오라클 SQL과 PL/SQL을 다루는 기술(홍형경)
 - Python
-  - 2023.03.14 ~ 2023.03.16
-  - 사용툴 : google colab, git hub
+  - 2023.03.14 ~ 2023.03.
+  - version : 3.11.2
+  - 사용툴 : Visual Studio Code, google colab, jupyter notebook
   - 파이썬 개발환경 구축
   - 파이썬 기본문법
-  - 참고 서적 : 알파(R과 Python)를 활용한 인공지능 챗봇 14
+  - 웹 크롤링 / Numpy /Pandas
+  - 주요 라이브러리 : numpy, pandas, matplotlib, plotly, seaborn, scikit-learn, streamlit
+  - 참고 서적 : 알파(R과 Python)를 활용한 인공지능 챗봇 14(황윤찬, 이 현),
+               파이선 머신러닝 판다스 데이터 분석(오승환)
