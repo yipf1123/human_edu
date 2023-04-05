@@ -1,3 +1,27 @@
 886 142 1624
 
 FhPLk3
+
+떠날때
+자격 증명관리에서
+
+windows 자격 증명
+일반자격 증명에
+git 삭제
+
+*서울시 부동산 실거래가 조회 및 예측 데모영상
+https://www.youtube.com/watch?v=j3rdthS7PM8&t=495s
+
+*깃 허브 참고
+https://github.com/wonyoung-ji
+https://github.com/SeungKyu37/human_edu
+
+*R markdown
+https://bookdown.org/yihui/rmarkdown/
+
+*R 데이터 시각화 참고 사이트
+https://bookdown.org/yihui/rmarkdown/
+https://posit.co/resources/cheatsheets/?type=posit-cheatsheets&_page=2/
+http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
+https://www.r-graph-gallery.com/
+https://exts.ggplot2.tidyverse.org/gallery/
