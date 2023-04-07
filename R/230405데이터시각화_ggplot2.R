@@ -34,7 +34,8 @@ ggplot(data= mpg, aes(x = displ, y = hwy, color = trans)) +
   facet_wrap(~ manufacturer, nrow = 3) +   
   #열의 고유값을 기준으로 서브플롯을 생성하고, 
   #한 행당 3개의 서브플롯을 배치하는 것 
-  # 서브플롯(Subplot)은 하나의 큰 그래프 영역 안에 작은 그래프들을 배치하여 여러 개의 그래프를 한번에 보여줄 수 있는 그래프        
+  # 서브플롯(Subplot)은 하나의 큰 그래프 영역 안에
+  # 작은 그래프들을 배치하여 여러 개의 그래프를 한번에 보여줄 수 있는 그래프        
   theme_bw()
 
 table(mpg$manufacturer)
