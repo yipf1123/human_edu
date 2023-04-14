@@ -1,0 +1,10 @@
+package extend;
+
+public class Interface1Impl  implements Interface1{
+	
+	@Override
+	public void test(int a) {
+		
+	}
+	
+}

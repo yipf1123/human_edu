@@ -1,0 +1,84 @@
+package com.instagram;
+
+public class Feed {
+	// 필드
+	String id; 		// 필수
+	int like;
+	private long hit;
+	String content;
+	String[] images; // 필수
+	String[] replys;
+	String[] hashTag;
+	
+	// id, images 없이는 생성이 안되게 막음
+	Feed(String id, String[] images){  
+		// 필드의 id값(파랑)에 전달인자 id(갈색)를 대입 
+		this.id = id;
+		this.images =images;
+	}
+	
+	
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		if(id != null) {
+		this.id = id;
+		}
+		return;// void는 return만 쓸 수 있다. 보통은 생략가능함
+		}
+
+	public int getLike() {
+		return like;
+	}
+
+	public void setLike(int like) {
+		this.like = like;
+	}
+
+	public long getHit() {
+		return hit;
+	}
+
+	public void setHit(long hit) {
+		this.hit = hit;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String[] getImages() {
+		return images;
+	}
+
+	public void setImages(String[] images) {
+		this.images = images;
+	}
+
+	public String[] getReplys() {
+		return replys;
+	}
+
+	public void setReplys(String[] replys) {
+		this.replys = replys;
+	}
+
+	public String[] getHashTag() {
+		return hashTag;
+	}
+
+	public void setHashTag(String[] hashTag) {
+		this.hashTag = hashTag;
+	}
+	
+	
+	
+	
+}

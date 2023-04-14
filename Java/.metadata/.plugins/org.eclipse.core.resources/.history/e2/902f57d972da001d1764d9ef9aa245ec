@@ -1,0 +1,35 @@
+package JAVA_MISSION;
+
+import java.util.Scanner;
+
+public class JM10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("금액 : ");
+		String name = sc.nextLine();
+		int input = sc.nextInt(); // 입력금액
+		int count; // 화폐매수
+		int money = 50000; // 화폐단위 : 큰 화폐단위부터 시작
+		boolean sw = true; // 화폐단위 변환 스위치 변수
+
+		while (money >= 1) {
+
+			count = input / money;
+			System.out.print(+ count + "     ");
+			input = input - (money * count);
+			// input = input % money
+
+			if (sw) {
+				money = money / 5;
+				sw = false;
+			} else {
+				money = money / 2;
+				sw = true;
+			}
+		}
+
+		// sw = !sw;
+
+		sc.close();
+	}
+}

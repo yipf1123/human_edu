@@ -1,0 +1,20 @@
+package com.instagram;
+
+public class FeedTest {
+
+	public static void main(String[] args) {
+		
+		
+		String id = "enshu1123";
+		String[] imgs = new String[2];
+		imgs[0] = "1.jpg";
+		imgs[1] = "2.jpg";
+		
+		Feed feed = new Feed(id, imgs);
+		
+		
+		String id2 = feed.id;
+		System.out.println("id2 : " + id2);
+	}
+
+}

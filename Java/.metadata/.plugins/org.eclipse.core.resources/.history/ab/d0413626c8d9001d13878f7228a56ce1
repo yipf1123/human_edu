@@ -1,0 +1,36 @@
+package bank;
+
+import java.util.Scanner;
+
+import Day09.BookStore.Person;
+
+public class AccountTest {
+	public static void main(String[] args) {
+		System.out.println("환영합니다. 궁밍은행입니다.");
+		System.out.println("계좌에 접속하시려면 고갱님의 성함을 입력해주세요.");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("성 함 : ");
+		String owner = sc.next();
+		Account acc1 = new Account(owner);
+
+		
+	// 메인 메뉴	
+	public static void showMenu() {
+		System.out.println("궁밍은행에 오신걸 환영합니다!");
+		System.out.println("*********************");
+		System.out.println("1. 고객 정보 확인");
+		System.out.println("2. 입금");
+		System.out.println("3. 출금");
+		System.out.println("0. 로그아웃");
+		System.out.println("*********************");
+		System.out.print(">> 메뉴번호 입력 : ");
+	}
+	
+	// 1. 고객 정보 확인
+	public static void guestInfo() {
+		System.out.println("현재 고객 정보 : ");
+		System.out.println("이름 : " + Account.getOwner());
+		System.out.println("잔액 : " + Account.getBalance());
+	}
+	
+}

@@ -1,0 +1,47 @@
+package bank;
+
+public class Account {
+	
+	// 필드
+	private int balance = 1000;
+	private String owner;
+	
+	Account(String owner){
+		this.owner = owner;
+	}
+	
+	
+	// 메소드
+	// 직접 잔액 수정
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		if(balance >= 0)
+		this.balance = balance;
+	}
+	public String getOwner() {
+		return owner;
+	}
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+	
+	// 입금
+	public void deposit(int money) {
+		balance += money;
+		System.out.println(money + "원이 입금되었습니다.");
+		}
+	
+	public void withdraw(int money){
+		if(balance > money) {
+			balance -= money;
+			System.out.println(money + "원이 출금되었습니다.");
+		}
+		else{
+			System.out.println("잔고가 부족합니다.");
+		}
+	}
+ 
+	
+} //class

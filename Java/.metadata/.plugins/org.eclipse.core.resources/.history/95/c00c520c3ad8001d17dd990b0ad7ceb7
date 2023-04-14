@@ -1,0 +1,34 @@
+package com.instagram;
+
+public class FeedTest {
+
+	public static void main(String[] args) {
+		
+		
+		String id = "enshu1123";
+		String[] imgs = new String[2];
+		imgs[0] = "1.jpg";
+		imgs[1] = "2.jpg";
+		
+		Feed feed = new Feed(id, imgs);
+		
+		
+		String id2 = feed.id;
+		System.out.println("id2 : " + id2);
+		
+		
+		Feed feed2 = new Feed("jhes",new String[]{"a.jpg"});
+		
+		System.out.println("feed2 id : " + feed2.id);
+		
+		// 필드를 직접 변경 후 출력
+		feed2.id = "idid";
+		System.out.println("feed2 id : " + feed2.id);
+		
+		// feed2의 hit 출력
+		feed2.setHit(-1);
+		System.out.println("feed2 hit : " + feed2.getHit());
+		
+	}
+
+}

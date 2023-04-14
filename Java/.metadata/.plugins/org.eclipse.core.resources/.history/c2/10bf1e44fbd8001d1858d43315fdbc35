@@ -1,0 +1,44 @@
+package expert;
+
+public class CopyTest {
+
+	public static void main(String[] args) {
+	
+		// 얕은복사, shallow copy, thin copy
+		// 깊은복사, deep copy, deep clone
+		
+		int a = 10;
+		test1(a);
+		System.out.println("a : " + a); // 10
+
+		int[] b = {1,2,3};
+		System.out.println("테스트 전 b[1] : " + b[1]); // 2
+		test2(b);
+		System.out.println("테스트 후 b[1] : " + b[1]); // 30
+	
+		long now = System.currentTimeMillis();
+		System.out.println("now : " + now); // 1970년도를 기준으로 1초로 계산 뒤에 세자리는 0.001
+		
+		String email = "blog.daum.com";
+		int index = email.indexOf(".");
+		String result = email.substring(index + 1, email.indexOf(".", index + 1));
+		System.out.println(result);
+		
+		String email2 = "blog.naver.com";
+		String result2 = email2.substring(5,10);
+		System.out.println(result2);
+
+
+	}
+	
+	// 깊은복사
+	static void test1(int b) {
+		b = 20;
+	}
+	
+	// 앝은복사 : 원본이 수정됨 (참조 타입)`
+	static void test2(int[] c) {
+		c[1] = 30;
+	}
+
+}

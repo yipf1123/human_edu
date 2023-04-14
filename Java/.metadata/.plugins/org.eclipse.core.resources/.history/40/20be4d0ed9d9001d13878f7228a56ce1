@@ -1,0 +1,5 @@
+package Diet;
+
+public interface DietTest {
+
+}

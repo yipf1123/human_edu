@@ -1,0 +1,41 @@
+package Day13;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class Ex08_FileCopy {
+	// 1. byte 단위로 파일 복사
+	// 2. KB 단위로 파일 복사
+
+	/**
+	 * 바이트 단위로 파일 복사
+	 * 
+	 * @param originalFile
+	 * @param copyFile
+	 */
+	public static void fileByteCopy(File originalFile, File copyFile) {
+		// originalFile : 원본 파일
+		// copyFile : 사본 파일
+		try {
+			FileInputStream fis = new FileInputStream(originalFile);
+			FileOutputStream fos = new FileOutputStream(copyFile);
+
+			int data;
+
+			while ((data = fis.read()) != -1) {
+				fos.write(data);
+			}
+			fis.close();
+			fos.close();
+			System.out.println("파일 복사를 완료하였습니다...");
+			System.out.println(originalFile.getName() + " → " + copyFile.getName());
+
+		} catch (Exception e) {
+			System.err.println("파일 복사중, 예외가 발생하였습니다...");
+			e.printStackTrace();
+		}
+
+	}
+
+}
