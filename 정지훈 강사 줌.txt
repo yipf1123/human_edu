@@ -25,3 +25,6 @@ https://posit.co/resources/cheatsheets/?type=posit-cheatsheets&_page=2/
 http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
 https://www.r-graph-gallery.com/
 https://exts.ggplot2.tidyverse.org/gallery/
+https://www.tidymodels.org/
+https://www.tmwr.org/
+https://shiny.rstudio.com/
