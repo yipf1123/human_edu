@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-HelloApplication<hello>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.study.hello.HelloApplication",
+            "projectName": "hello",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Ex04WebBasicApplication<Ex04_WebBasic>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.study.springboot.Ex04WebBasicApplication",
+            "projectName": "Ex04_WebBasic",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
